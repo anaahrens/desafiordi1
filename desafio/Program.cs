@@ -8,15 +8,13 @@ namespace desafio
     {
         static void Main (string[ ] args)
         {
-
+            //abaixo o programa número 1 - repare que no programa 2, as variáveis são diferentes do programa 1
             int numeroLinhas;
-           //Entrada
-           Console.WriteLine("How many lines? ");
+            Console.WriteLine("How many lines? ");
             numeroLinhas = int.Parse(Console.ReadLine());
 
             StreamWriter escritor = new StreamWriter("desafio.txt");
 
-            //Processamento
 
             for (int i = 1; i <= numeroLinhas; i++)
            {
@@ -25,15 +23,12 @@ namespace desafio
 
            escritor.Close();
 
-           Console.WriteLine("");
+           Console.WriteLine("Arquivo Criado!");
+
+           //abaixo seria o programa número 2 do desafio
 
            StreamReader reader = new StreamReader("desafio.txt");
-           
 
-           //string number = reader.ReadLine();
-
-
-           //Console.WriteLine(number);
            int number2 = 0;
            bool hasLines = true;
            do  
@@ -49,11 +44,6 @@ namespace desafio
                {
                     number2 += Convert.ToInt32(number);
                }
-               
-                List<string> test = new List<string>();
-
-                test.
-               //Console.WriteLine(number2);
 
            } while (hasLines);
 
